@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.1",
+    "request": "^2.81.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "name": "auth-app-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
