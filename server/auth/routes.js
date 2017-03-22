@@ -1,5 +1,7 @@
 const express = require('express');
 
+const { isReqLoggedIn, validateWithFacebook } = require('./utils');
+
 const router = new express.Router();
 
 module.exports = router;
