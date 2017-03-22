@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const authRouter = require('./auth');
+const { router: authRouter } = require('../auth');
 
 const router = new express.Router();
 
