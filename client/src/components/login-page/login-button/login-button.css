@@ -1,0 +1,9 @@
+.login-button {
+  height: 40px;
+  width: 100%;
+  margin: 5px;
+}
+
+.login-button-wrapper i {
+  margin: 5px;
+}
