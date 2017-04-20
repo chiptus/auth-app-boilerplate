@@ -4,7 +4,7 @@ import './login-page.css';
 
 import LoginButton from './login-button';
 
-const LoginPage = ({ login }) => {
+const LoginPage = ({ login, loginError }) => {
   return (
     <div className="login-page">
       <LoginButton socialNetwork="facebook" login={login}>
@@ -13,12 +13,16 @@ const LoginPage = ({ login }) => {
       <LoginButton socialNetwork="twitter" login={login}>
         Login with twitter
       </LoginButton>
+      <div class="login-error error">
+        {loginError}
+      </div>
     </div>
   );
 };
 
 LoginPage.propTypes = {
   login: PropTypes.func.isRequired,
+  loginError: PropTypes.string,
 };
 
 export default LoginPage;
