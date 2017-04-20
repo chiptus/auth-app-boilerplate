@@ -4,16 +4,17 @@ import './login-page.css';
 
 import LoginButton from './login-button';
 
-const LoginPage = ({ login, loginError }) => {
+const LoginPage = ({ login, loginError, user }) => {
   return (
     <div className="login-page">
+      {user && 'Logged In'}
       <LoginButton socialNetwork="facebook" login={login}>
         Login with facebook
       </LoginButton>
       <LoginButton socialNetwork="twitter" login={login}>
         Login with twitter
       </LoginButton>
-      <div class="login-error error">
+      <div className="login-error error">
         {loginError}
       </div>
     </div>
