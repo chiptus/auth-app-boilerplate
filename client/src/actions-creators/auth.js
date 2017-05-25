@@ -17,7 +17,7 @@ export function login(sn) {
         },
         reason => {
           console.error(reason);
-          dispatch(reason);
+          dispatch(failedLogin(reason.error_message));
         }
       )
       .then(user => {
