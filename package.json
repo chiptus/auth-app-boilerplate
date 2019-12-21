@@ -9,6 +9,6 @@
     "postinstall": "concurrently 'cd server && yarn' 'cd client && yarn'"
   },
   "dependencies": {
-    "concurrently": "^3.4.0"
+    "concurrently": "^5.0.2"
   }
 }
